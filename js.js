@@ -32,17 +32,8 @@ function getMaxResult(a, b, c) { // 4
 }
 
 function getRatingStudy(a) { // 5
-  let arr = [];
-  for (let i = 0; i <= 100; i++) {
-    let rating = 'F';
-    rating = i > 19 ? 'E' : rating;
-    rating = i > 39 ? 'D' : rating;
-    rating = i > 59 ? 'C' : rating;
-    rating = i > 74 ? 'B' : rating;
-    rating = i > 89 ? 'A' : rating;
-    arr[i] = rating;
-  }
-  return arr[a];
+  const arrRating = ["F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","E","E","E","E","E","E","E","E","E","E","E","E","E","E","E","E","E","E","E","E","D","D","D","D","D","D","D","D","D","D","D","D","D","D","D","D","D","D","D","D","C","C","C","C","C","C","C","C","C","C","C","C","C","C","C","B","B","B","B","B","B","B","B","B","B","B","B","B","B","B","A","A","A","A","A","A","A","A","A","A","A"];
+  return arrRating[a];
 }
 
 const resultCalcIsEven = getIsEvenCalc(4,3)
